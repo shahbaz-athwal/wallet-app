@@ -7,9 +7,9 @@
     "./card": "./src/card.tsx",
     "./code": "./src/code.tsx",
     "./appbar": "./src/Appbar.tsx",
-    "./center": "./src/center.tsx",
+    "./center": "./src/Center.tsx",
     "./select": "./src/Select.tsx",
-    "./textInput": "./src/TextInput.tsx"
+    "./textinput": "./src/TextInput.tsx"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
