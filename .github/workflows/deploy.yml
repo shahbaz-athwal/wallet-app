@@ -37,6 +37,6 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         script: |
           sudo docker pull 100xdevs/week-18-class:latest
-          sudo docker stop web-app || true
-          sudo docker rm web-app || true
-          sudo docker run -d --name web-app -p 3005:3000 shahcodes/wallet-app:latest
+          sudo docker stop wallet-app || true
+          sudo docker rm wallet-app || true
+          sudo docker run -d --name wallet-app -p 3005:3000 shahcodes/wallet-app:latest
