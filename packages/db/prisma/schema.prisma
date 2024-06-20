@@ -37,14 +37,6 @@ model OnRampTransaction {
   user      User         @relation(fields: [userId], references: [id])
 }
 
-model Balance {
-  id     Int  @id @default(autoincrement())
-  userId Int  @unique
-  amount Int
-  locked Int
-  user   User @relation(fields: [userId], references: [id])
-}
-
 model p2pTransfer {
   id         Int          @id @default(autoincrement())
   amount     Int
@@ -53,6 +45,14 @@ model p2pTransfer {
   fromUser   User         @relation(name: "FromUserRelation", fields: [fromUserId], references: [id])
   toUserId   Int
   toUser     User         @relation(name: "ToUserRelation", fields: [toUserId], references: [id])
+}
+
+model Balance {
+  id     Int  @id @default(autoincrement())
+  userId Int  @unique
+  amount Int
+  locked Int
+  user   User @relation(fields: [userId], references: [id])
 }
 
 enum AuthType {

@@ -14,10 +14,10 @@ export function SendCard() {
         <Center>
             <Card title="Send">
                 <div className="min-w-72 pt-2">
-                    <TextInput placeholder={""} label="Email or Number" onChange={(value) => {
+                    <TextInput placeholder={"Number"} label="Number" onChange={(value) => {
                         setNumber(value)
                     }} />
-                    <TextInput placeholder={"CAD"} label="Amount" onChange={(value) => {
+                    <TextInput placeholder={"Amount"} label="Amount" onChange={(value) => {
                         setAmount(value)
                     }} />
                     <div className="pt-4 flex justify-center">
