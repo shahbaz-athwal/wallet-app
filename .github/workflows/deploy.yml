@@ -39,4 +39,4 @@ jobs:
           sudo docker stop wallet-app || true
           sudo docker rm wallet-app || true
           sudo docker pull shahcodes/wallet-app:latest
-          sudo docker run -e DATABASE_URL=${{ secrets.DATABASE_URL }} -e NEXTAUTH_URL=${{ secrets.NEXTAUTH_URL }} -e JWT_SECRET=${{ secrets.JWT_SECRET }} -d --name wallet-app -p 3005:3000 shahcodes/wallet-app:latest
+          sudo docker run -e DATABASE_URL=${{ secrets.DATABASE_URL }} -e NEXTAUTH_URL=${{ secrets.NEXTAUTH_URL }} -e JWT_SECRET=${{ secrets.JWT_SECRET }} -d --name wallet-app -p 3001:3000 shahcodes/wallet-app:latest
